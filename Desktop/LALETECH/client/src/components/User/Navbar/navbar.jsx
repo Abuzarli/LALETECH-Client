@@ -1,14 +1,14 @@
 import './navbar.scss'
+import './responsive.scss'
+
 import { Link } from 'react-router-dom'
-import PhoneIcon from '@mui/icons-material/Phone';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import PlaceIcon from '@mui/icons-material/Place';
-import NearMeIcon from '@mui/icons-material/NearMe';
-// import DropDownProduct from './dropdown';
+
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faXmark, } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faEnvelope, faLocationDot, faPhone, faXmark, } from '@fortawesome/free-solid-svg-icons'
+import LALETECH from './images/Logo.png'
+import LALETECH_WHITE from './images/whiteLogo.png'
 
 import { useState } from 'react';
 
@@ -19,25 +19,25 @@ const USERNAVBAR = () => {
       {/* NAVBAR HEADING */}
       <div className='nav_head'>
         {/* LOGO */}
-        <div className='logo_img' > <Link to='/'><img className='head-logo' src="../images/logo.png" alt="LALETECH" /></Link></div>
+        <div className='logo_img' > <Link to='/'><img className='head-logo' src={LALETECH} alt="LALETECH" /></Link></div>
 
         <div className='cont-1'>
           {/* CONTACT NUMBER */}
         <div className='contact'>
-          <div className='icon-div'><PhoneIcon style={{'color':'white', "width":'40px'}}/></div>
+          <div className='icon-div'><FontAwesomeIcon className='nav-icon' icon={faPhone} /></div>
           <span className='txt'><a style={{color:'black'}}  href="tel:+994-50-555-25-50">+994 (50) 555 25 50</a></span>
           </div>
 
           {/* GMAIL */}
           <div className='contact'>
-           <div className='icon-div'> <MailOutlineIcon style={{'color':'white', "width":'40px'}}/></div>
+           <div className='icon-div'> <FontAwesomeIcon className='nav-icon' icon={faEnvelope} /> </div>
             <span className='txt'><a style={{textDecoration:'none',color:'black'}} href="mailto:laletech4@gmail.com">laletech4@gmail.com</a></span>
           </div>
 
           {/* LOCATION ADDRESS */}
           <div className='contact'>
             <a className='contact' href="https://goo.gl/maps/Tb971sNrbD1xb4TV8">
-            <div className='icon-div'><PlaceIcon style={{'color':'white', "width":'40px'}}/></div>
+            <div className='icon-div'><FontAwesomeIcon className='nav-icon' icon={faLocationDot} /></div>
             <span className='txt'>Laletech,
              <br />
              Sattar Bahulul-Zadeh, Baku
@@ -51,7 +51,7 @@ const USERNAVBAR = () => {
       <div className='nav_main'>
                 {/* LOGO */}
                 <div className='main-logo-img' > 
-                <Link to='/'><img className='logo' src="../images/whitelogo.png" alt="LALETECH" /></Link>
+                <Link to='/'><img className='logo' src={LALETECH_WHITE} alt="LALETECH" /></Link>
                 </div>
         {/* MENU */}
         {/* COMPONENTS */}

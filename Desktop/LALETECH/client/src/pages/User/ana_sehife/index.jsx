@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet'
 import {Link} from 'react-router-dom'
-import { Button, Grid } from '@mui/material';
+import {  Grid } from '@mui/material';
 import './index.scss'
 import image1 from './images/aweta.jpg'
 import image2 from './images/ekin-makina.png'
@@ -21,23 +21,21 @@ import Karaduman from './images/karadumanbg.png'
 import SeriLogo from './images/serimakinabg.png'
 import Soley from './images/soley-1.jpg'
 import LALETECH from './images/Logo.png'
-import VisibilityIcon from '@mui/icons-material/Visibility';
 
 
 
 // FONT AWESOME
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSitemap,faWrench,faQrcode,faGears } from '@fortawesome/free-solid-svg-icons'
+import { faSitemap,faWrench,faQrcode,faGears, faEye } from '@fortawesome/free-solid-svg-icons'
 
 
 // SWIPER
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
-// import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './styles.css';
-import { Autoplay,EffectFade, Navigation, Pagination } from 'swiper/modules';
+import { Autoplay,EffectFade,  Pagination } from 'swiper/modules';
 
 
 const Home = () => {
@@ -59,11 +57,11 @@ const Home = () => {
           delay: 5000,
           disableOnInteraction: false,
         }}
-        navigation={true}
+        // navigation={true}
         pagination={{
           clickable: true,
         }}
-        modules={[Autoplay,EffectFade, Navigation, Pagination]}
+        modules={[EffectFade,  Pagination]}
         className="mySwiper"
       >
         {/* SLIDE 1 */}
@@ -75,7 +73,7 @@ const Home = () => {
 
           <div className='slide-button'>
           <Link to='/products/aweta'>
-            <Button  variant='contained' style={{fontSize:'20px'}}><VisibilityIcon/>MƏHSULA BAX</Button>
+            <button className='prod-but-1'><FontAwesomeIcon icon={faEye} />MƏHSULA BAX</button>
           </Link>
           </div>
 
@@ -88,7 +86,7 @@ const Home = () => {
         {/* SLIDE 2 */}
         <SwiperSlide>
           <div className='text-div'>
-           <p className='slide-text'>
+           <p className='slide-text' id='slide-text-2'>
 
              <br />
              <br />
@@ -96,22 +94,22 @@ const Home = () => {
            </p>
           </div>
 
-          <div className='slide-button'>
+          <div className='slide-button' id='sb-2'>
           <Link to='/products/ekin-makina'>
-            <Button variant='contained' style={{fontSize:'20px'}}><VisibilityIcon/>MƏHSULA BAX</Button>
+          <button className='prod-but-1'><FontAwesomeIcon icon={faEye} />MƏHSULA BAX</button>
           </Link>
           </div>
           
-          <div className='swiper-div'>
-          <img src={image2} alt="" />
-          <img src={EkinLogo} alt="" />
+          <div className='swiper-div-2'>
+          <img  src={image2} alt="" />
+          <img  src={EkinLogo} alt="" />
           </div>
         </SwiperSlide>
 
         {/* SLIDE 3 */}
         <SwiperSlide>
         <div className='text-div' id='slide-3'>
-            <p className='slide-text'>
+            <p className='slide-text' id='slide-text-3'>
               <span className='slide-title'>
                  Perforeli Kese Kağıdı Makinası
                  
@@ -128,9 +126,9 @@ const Home = () => {
               </ul>                           
           </div>
 
-          <div className='slide-button'>
+          <div className='slide-button' id='slide-button-3'>
           <Link to='/products/soley-makina'>
-            <Button variant='contained' style={{fontSize:'20px'}}><VisibilityIcon/>MƏHSULA BAX</Button>
+          <button className='prod-but-1'><FontAwesomeIcon icon={faEye} />MƏHSULA BAX</button>
           </Link>
           </div>
 
@@ -143,12 +141,12 @@ const Home = () => {
         {/* SLIDE 4 */}
         <SwiperSlide>
           <div className='text-div'>
-            <p className='slide-text'>Təcrübəli işçi heyəti, satış sonrası xidmət və xidmətdə məsuliyyəti keyfiyyəti ilə dünya miqyasında böyük uğurlar qazanmışdır</p>
+            <p className='slide-text' id='slide-text-4'>Təcrübəli işçi heyəti, satış sonrası xidmət və xidmətdə məsuliyyəti keyfiyyəti ilə dünya miqyasında böyük uğurlar qazanmışdır</p>
           </div>
 
-          <div className='slide-button'>
+          <div className='slide-button' id='sb-4'>
           <Link to='/products/seri-makina'>
-            <Button variant='contained' style={{fontSize:'20px'}}><VisibilityIcon/>MƏHSULA BAX</Button>
+          <button className='prod-but-1'><FontAwesomeIcon icon={faEye} />MƏHSULA BAX</button>
           </Link>
           </div>
 
@@ -169,13 +167,13 @@ const Home = () => {
             sektorun gözləntilərinə uyğun, yüksək keyfiyyət standartlarında və müştəri ehtiyaclarına uyğun xüsusi istehsallar həyata keçirir</p>
           </div>
 
-          <div className='slide-button'>
+          <div className='slide-button' id='sb-3'>
           <Link to='/products/karaduman-kalip'>
-            <Button variant='contained' style={{fontSize:'20px'}}><VisibilityIcon/>MƏHSULA BAX</Button>
+          <button className='prod-but-1'><FontAwesomeIcon icon={faEye} />MƏHSULA BAX</button>
           </Link>
           </div>
 
-          <div  className='swiper-div'>
+          <div  className='swiper-div-5'>
           <img src={image5} alt=""/>
           <img src={Karaduman} alt="" />
           </div>
@@ -188,7 +186,7 @@ const Home = () => {
           </div >
           <div className='slide-button'>
           <Link to='/products/elave-mehsullar'>
-            <Button variant='contained' style={{fontSize:'20px'}}><VisibilityIcon/>MƏHSULA BAX</Button>
+          <button className='prod-but-1'><FontAwesomeIcon icon={faEye} />MƏHSULA BAX</button>
           </Link>
           </div>
           <div  className='swiper-div-6'>
@@ -200,7 +198,6 @@ const Home = () => {
           <img src={image11} alt='' />
           <img src={image12} alt='' />
           <img src={image13} alt='' /> 
-
           </div>
         </SwiperSlide>                
       </Swiper>

@@ -29,7 +29,7 @@ const About = () => {
          <div className='direction'><span className='main-dir'><b>Əsas istiqamətlərimiz</b></span></div> 
     
           <ul className='about-list'>
-          <li>Plastik Qablaşdırma</li>
+           <li>Plastik Qablaşdırma</li>
             <li>Karton Qablaşdırma</li>
             <li>Heyvandarlıq kompleksləri</li>
             <li>Meyvə tərəvəz bağları

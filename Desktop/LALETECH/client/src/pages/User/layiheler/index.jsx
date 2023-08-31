@@ -32,7 +32,7 @@ const Projects = () => {
         {/* PROJECT 1 */}
         <div className='projects' id='project-1'>
           <div><img className='project-image' id='project-image-1' src={AqroInvest} alt="" /></div>
-          <div className='projects-content'>
+          <div  className='projects-content'>
             <h4 className='projects-title'>AQRO INVEST & ISTEHSALAT MMC</h4>
             <h1>KARTON QUTU FABRIKININ TAM QURULMASI</h1>
             <p>Azərbaycanda Aqro invest şirkətində dünya standartlarına cavab verən <b> 2.15 </b> enində <b> BÜZMƏLİ KARTON MAKİNASINI </b> uğurla Çalışdıraraq təhvil verdik</p>
@@ -74,10 +74,11 @@ const Projects = () => {
 
         {/* PROJECT 7 */}
         <div className='projects' id='project-7'>
-          <div><img className='project-image' id='project-image-7' src={Naxcivan} alt="" /></div>
+          <div><img className='project-image' id='project-image-7' src={Naxcivan} alt="REGİONAL SOYUQ ANBARLAR" /></div>
           <div className='projects-content'>
             <h4 className='projects-title'>NAXÇIVAN</h4>
-            <h1>REGİONAL SOYUQ ANBARLAR</h1>
+            <h1>REGİONAL 
+              SOYUQ ANBARLAR</h1>
             <p>Azərbaycanda <b>NAXÇIVANDA</b> dünya standartlarına cavab verən <b> SOYUDUCULARI </b> uğurla Çalışdıraraq təhvil verdik</p>
           </div>
         </div>

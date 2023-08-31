@@ -58,7 +58,6 @@ const Contact = () => {
 
 
 
-
        {/* CONTACT US */}
        <div>
         <div>
@@ -70,17 +69,17 @@ const Contact = () => {
 
         {/* FORM */}
         <form className='form' ref={form} onSubmit={onSave}>
-          <div>
+          <div className='form-1'>
             
-           <TextField id="outlined-basic" label="Ad Soyad" variant="outlined" name='name' type='text' />
+           <TextField id="outlined-basic" label="Ad Soyad" variant="outlined" name='name' type='text' required />
            
-            <TextField id="outlined-basic" label="E-Mail Ünvanınız" variant="outlined" type="email" name="email" />
+            <TextField id="outlined-basic" label="E-Mail Ünvanınız" variant="outlined" type="email" name="email" required />
             
-           <TextField  id="outlined-basic" label="Telefon Nömrəniz" variant="outlined" name='number'  />
+           <TextField id="outlined-basic" label="Telefon Nömrəniz"  variant="outlined" name='number'/>
 
           </div>
           <div>
-           <TextField  className='theme' id="outlined-basic" label="Mövzu" variant="outlined" name="subject"  />
+           <TextField  className='theme' id="outlined-basic" label="Mövzu" variant="outlined" name="subject" required />
 
           </div>
           <div>
@@ -91,6 +90,7 @@ const Contact = () => {
              multiline
              rows={4}
              name='message'
+             required
 
            />
           </div>

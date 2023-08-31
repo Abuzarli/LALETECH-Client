@@ -18,7 +18,7 @@ const SoleyMakina = () => {
       <ProductNav/>
 
       
-      <img style={{marginBottom:'100px' ,marginTop:'100px' ,width:'28rem'}} className='prod-logo' src={soleymakina} alt="" />
+      <img style={{marginBottom:'100px' ,marginTop:'100px'}} className='soley-logo' src={soleymakina} alt="" />
       
       <div className='all-products' style={{marginBottom:'100px'}}>
         <Grid className='grid' container spacing={{ xs: 12, sm:6, md:4, lg:3 }} columns={{ xs: 4, sm: 8, md: 12 }}>

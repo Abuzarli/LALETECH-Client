@@ -4,7 +4,7 @@ import './nav.scss'
 const ProductNav = () => {
   return (
     <section>
-          <h1 className='product-title'>BÜTÜN MƏHSULLAR</h1>
+          <h1 className='product-title' >BÜTÜN MƏHSULLAR</h1>
          <div className='product-nav'>
             <NavLink style={{textDecoration:'none'}} onClick={()=>window.scrollTo(0, 0)} className='prod-nav' activeclassname='active' to='/products/ekin-makina'>EKIN MAKINA</NavLink>
             <NavLink style={{textDecoration:'none'}} onClick={()=>window.scrollTo(0, 0)} className='prod-nav' activeclassname='active' to='/products/atlasics'>LALETECH</NavLink>
@@ -21,6 +21,8 @@ const ProductNav = () => {
             <NavLink style={{textDecoration:'none'}} onClick={()=>window.scrollTo(0, 0)} className='prod-nav' activeclassname='active' to='/products/haknersan'>HAKNERSAN</NavLink>
             <NavLink style={{textDecoration:'none'}} onClick={()=>window.scrollTo(0, 0)} className='prod-nav' activeclassname='active' to='/products/cetinel'>ÇETİNEL</NavLink>
             <NavLink style={{textDecoration:'none'}} onClick={()=>window.scrollTo(0, 0)} className='prod-nav' activeclassname='active' to='/products/uzay-baskul'>UZAY BASKÜL</NavLink>
+
+
             <NavLink style={{textDecoration:'none'}} onClick={()=>window.scrollTo(0, 0)} className='prod-nav' activeclassname='active' to='/products/filo-kompressor'>FİLO KOMPRESÖR</NavLink>
             <NavLink style={{textDecoration:'none'}} onClick={()=>window.scrollTo(0, 0)} className='prod-nav' activeclassname='active' to='/products/elave-mehsullar'>ƏLAVƏ MƏHSULLAR</NavLink>
 

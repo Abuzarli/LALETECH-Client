@@ -16,7 +16,7 @@ const TurVarMakina = () => {
   return (
     <section>
       <ProductNav/>
-      <img style={{marginBottom:'100px' ,marginTop:'100px' ,width:'28rem'}} className='prod-logo' src={turvar} alt="" />
+      <img style={{marginBottom:'100px' ,marginTop:'100px'}} className='turvar-logo' src={turvar} alt="" />
       
       <div className='all-products' style={{marginBottom:'100px'}}>
         <Grid className='grid' container spacing={{ xs: 12, sm:6, md:4, lg:3 }} columns={{ xs: 4, sm: 8, md: 12 }}>

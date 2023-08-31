@@ -14,8 +14,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    z-index: 998;
-
+    z-index: 999;
 }
 
 .logo{
@@ -44,7 +43,6 @@ padding: 20px 0;
 font-size: 16px;
 font-weight: 500;
 font-family: 'Open Sans', sans-serif;
-
 }
 .nav_links li{
     display: block;
@@ -98,75 +96,13 @@ font-family: 'Open Sans', sans-serif;
     border: 1px solid #08256a;
     border-radius: 50%;
     background: linear-gradient(#0c41be, #000046); 
-
-    width: 50px;
-    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-@media (max-width: 948px){
-
-    .logo{
-        width: 130%;
-
-    }
-    .main-logo-img{
-        display: flex;
-        display: flex;
-        margin: 0 auto;
-    }
-
-    .nav_head{
-        display: none;
-    }
-    .nav_links{
-        display: none;
-    }
-    .social{
-        display: none;
-    }
-    .nav_links_mobile{
-        border-top: 3px solid  #386adedc;
-        position: absolute;
-        display: block;
-        list-style: none;
-        background-color: #08256adc;
-        left: 0;
-        top: 90px;
-        transition: all 0.5s ease-out;
-        width: 100%;
-        padding: 0 auto;
-    }
-    .link:hover{
-        background-color: #172554;
-        transition: 0.1s;
-    }
-    .link{
-        font-size: 20px;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        // width: 104%;
-        transition: all 0.5s ease;
-    }
-    .mobile_menu_icon{
-        display: flex;
-        // position: absolute;
-        font-size: 30px;
-        color: white;
-        border: none;
-        background-color:transparent;
-        outline: none;
-        // top: 60px;
-        margin-right: 20px;
-
-    }
-
-
+.nav-icon{
+    color: white;
+    font-size: 20px;
 }
 
 

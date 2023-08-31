@@ -19,7 +19,7 @@ const EKIN = () => {
     <div>
       <ProductNav/>
       {/* <EkinNav/> */}
-      <img className='prod-logo' src={ekinLogo} alt="" />
+      <img className='prod-logo' style={{marginTop:'100px', marginBottom:'100px'}} src={ekinLogo} alt="" />
 
             {/* ALL PRODUCTS EKIN MAKINA */}
             <div className='all-products'>
@@ -28,7 +28,7 @@ const EKIN = () => {
           return <Grid key={ekinProduct._id} item lg={3}>
           <a href={ekinProduct.link}>
           <div className='ekin-card'>
-            <img className='ekin-prod' src={ekinProduct.imageURL} alt="" />
+            <img className='ekin-prod'  src={ekinProduct.imageURL} alt="" />
             <p className='prod-name'><b><span>{ekinProduct.weight}</span> {ekinProduct.name}</b></p>
           </div>
           </a>

@@ -5,6 +5,8 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import PlaceIcon from '@mui/icons-material/Place';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 
 const FOOTER = () => {
@@ -13,14 +15,14 @@ const FOOTER = () => {
       <div className='contact-foot'>
         <h3 className='contact_title'>Əlaqə Məlumatları</h3>
         <ul className='contact-txt'>
-          <li style={{lineHeight:'23px'}}><PlaceIcon style={{'width':'20px'}}/> 
+          <li className='adres'><FontAwesomeIcon icon={faLocationDot}/> 
           Bakı şəhəri,Binəqədi rayonu,
           <br />
            Dərnəgül yaşayış sahəsi 3117
           </li>
-          <li><PhoneIcon style={{'width':'20px'}}/><a style={{color:'white'}}  href="tel:+994-50-555-25-50">+994 (50) 555 25 50</a></li> 
-          <li><PhoneIcon style={{'width':'20px'}}/><a style={{color:'white'}}  href="tel:+994-70-555-55-90">+994 (50) 555 25 50</a></li>  
-          <li><MailOutlineIcon style={{'width':'20px'}}/><a style={{textDecoration:'none',color:'white'}} href="mailto:laletech4@gmail.com">laletech4@gmail.com</a></li>
+          <li><FontAwesomeIcon icon={faPhone}/><a style={{color:'white'}}  href="tel:+994-50-555-25-50">+994 (50) 555 25 50</a></li> 
+          <li><FontAwesomeIcon icon={faPhone}/><a style={{color:'white'}}  href="tel:+994-70-555-55-90">+994 (50) 555 25 50</a></li>  
+          <li><FontAwesomeIcon icon={faEnvelope}/><a style={{textDecoration:'none',color:'white'}} href="mailto:laletech4@gmail.com">laletech4@gmail.com</a></li>
           <li><FacebookIcon style={{'width':'20px'}}/>
            <a style={{textDecoration:'none', color:'white'}} href="https://www.facebook.com/profile.php?id=100094357220772&mibextid=ZbWKwL">Laletech Mmc</a>
            </li>
@@ -76,7 +78,9 @@ const FOOTER = () => {
         <h3 className='contact_title'>HAQQIMIZDA</h3>
         <p className='foot-about-content'>
         LALETECH-MMC şirkəti olaraq fəaliyyətimiz dünyada inkişaf edən texnologiyanın Kənd təsərrüfatının inkişafına tətbiqində mühəndislik etməkdir.
-        Ölkə rəhbərliyinin Kənd Təssərrüfatına göstərdiyi böyük diqqət və dəstəyi nəticəsində kənd təsərrüufatı sahələri sürətlə genişlənir.Bu zaman kənd təsərrüfatının artım templərinə cavab verən, effektivliyi təmin edəcək müasir texnika və texnologiyaların tətbiqinə zərurət yaranır
+        Ölkə rəhbərliyinin Kənd Təssərrüfatına göstərdiyi böyük diqqət və dəstəyi nəticəsində kənd təsərrüufatı sahələri sürətlə genişlənir.
+        Bu zaman kənd təsərrüfatının artım templərinə cavab verən, 
+        effektivliyi təmin edəcək müasir texnika və texnologiyaların tətbiqinə zərurət yaranır
         Biz LALETECH-MMC şirkəti olaraq Layihələndirmə,müasir texnologiyanın araşdırılması, qurulması, istehsal prosesinin düzgün idarə olunması, Xammal təminatı və servis həyata Keçirməkdəyik.
         </p>
       </div>

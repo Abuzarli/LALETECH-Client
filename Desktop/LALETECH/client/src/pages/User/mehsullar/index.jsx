@@ -1,6 +1,5 @@
-import './index.scss'
+import './responsive.scss'
 import { Helmet } from 'react-helmet'
-import ProductNav from './productNav/productNav'
 import EKIN from './ekinmakina'
 
 const Products = () => {

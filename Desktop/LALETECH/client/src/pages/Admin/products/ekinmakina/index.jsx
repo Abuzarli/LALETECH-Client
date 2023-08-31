@@ -65,8 +65,8 @@ function handleDelete(_id){
         <Grid style={{marginBottom:'100px'}} className='grid' container spacing={{ xs: 12, sm:6, md:4, lg:3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
         {ekinProducts && ekinProducts.map((ekinProduct)=>{
           return <Grid key={ekinProduct._id} item lg={3}>
-          <div className='ekin-card'>
-            <img className='ekin-prod' src={ekinProduct.imageURL} alt="" />
+          <div className='ekin-admin-card'>
+            <img className='ekin-admin-prod' src={ekinProduct.imageURL} alt="" />
             <p className='prod-name'><b><span>{ekinProduct.weight}</span> {ekinProduct.name}</b></p>
             <div className='prod-buttons'>
              <Button variant='contained' color='warning'>  EDIT</Button>
